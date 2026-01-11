@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catan Hex Stickers - Image Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: letter;
+            margin: 5mm;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        .page {
+            width: 200mm;
+            height: 260mm;
+            padding: 2mm;
+            page-break-after: always;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            height: 65mm;
+            margin-bottom: 0mm;
+        }
+
+        .hex {
+            width: 73mm;
+            height: 63mm;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hex::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 32mm;
+            height: 32mm;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .hex.desert::after {
+            display: none;
+        }
+
+        .hex.brick { background-image: url('brick.jpg'); }
+        .hex.wood { background-image: url('wood.jpg'); }
+        .hex.sheep { background-image: url('sheep.jpg'); }
+        .hex.wheat { background-image: url('wheat.jpg'); }
+        .hex.ore { background-image: url('ore.jpg'); }
+        .hex.desert { background-image: url('desert.jpg'); }
+
+        @media print {
+            .hex { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1: 8 hexes -->
+    <div class="page">
+        <div class="row">
+            <div class="hex brick"></div>
+            <div class="hex brick"></div>
+        </div>
+        <div class="row">
+            <div class="hex brick"></div>
+            <div class="hex wood"></div>
+        </div>
+        <div class="row">
+            <div class="hex wood"></div>
+            <div class="hex wood"></div>
+        </div>
+        <div class="row">
+            <div class="hex wood"></div>
+            <div class="hex sheep"></div>
+        </div>
+    </div>
+
+    <!-- Page 2: 8 hexes -->
+    <div class="page">
+        <div class="row">
+            <div class="hex sheep"></div>
+            <div class="hex sheep"></div>
+        </div>
+        <div class="row">
+            <div class="hex sheep"></div>
+            <div class="hex wheat"></div>
+        </div>
+        <div class="row">
+            <div class="hex wheat"></div>
+            <div class="hex wheat"></div>
+        </div>
+        <div class="row">
+            <div class="hex wheat"></div>
+            <div class="hex ore"></div>
+        </div>
+    </div>
+
+    <!-- Page 3: 3 hexes -->
+    <div class="page">
+        <div class="row">
+            <div class="hex ore"></div>
+            <div class="hex ore"></div>
+        </div>
+        <div class="row">
+            <div class="hex desert"></div>
+        </div>
+    </div>
+</body>
+</html>
