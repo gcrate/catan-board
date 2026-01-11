@@ -189,8 +189,7 @@ Open a browser and go to:
 http://catan.local
 ```
 
-![Photo: Web interface on phone]
-<!-- TODO: Add screenshot of web interface -->
+![App setup mode](img/setup.png)
 
 ## Usage
 
