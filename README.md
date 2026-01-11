@@ -254,6 +254,10 @@ sudo apt install -y hostapd dnsmasq
 
 See [Raspberry Pi hotspot documentation](https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-routed-wireless-access-point) for full setup.
 
+## TODO: 
+
+Need to add some stickers for the ports. Using the cardboard ones that come with the game for now
+
 ## License
 
 MIT License - feel free to build your own and modify!
