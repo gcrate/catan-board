@@ -664,6 +664,10 @@
         }
 
         async function backToSetup() {
+            if (!confirm('Are you sure?')) {
+                return;
+            }
+
             try {
                 const response = await fetch('/api/back_to_setup', { method: 'POST' });
                 boardState = await response.json();

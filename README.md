@@ -2,9 +2,9 @@
 
 An interactive 3D-printed Catan board with LED-lit hexes controlled by a Raspberry Pi. When you roll the dice, the matching resource hexes light up!
 
+![Roll](img/roll.gif)
 ![Catan Board](img/board.jpg)
 ![Catan Tiles](img/modular.jpg)
-![Hosted Webpage](img/app.png)
 
 ## Features
 
@@ -190,6 +190,8 @@ http://catan.local
 ```
 
 ![App setup mode](img/setup.png)
+![App setup mode](img/app.png)
+
 
 ## Usage
 
