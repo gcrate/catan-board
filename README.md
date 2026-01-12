@@ -63,7 +63,7 @@ Print 18 resource tiles:
 - 30mm recess for number token
 
 
-### Number Tokens (`all_tokens.scad`)
+### Number Tokens (`all_tokens.3mf`)
 
 Print in clear/translucent PLA:
 - 29.5mm diameter
